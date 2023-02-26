@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 17, 43);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.wm_main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.wm_main h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(236, 236, 236);
+  font-weight: 900;
+}
+
+.wm_main h1 span {
+  font-size: 30px;
+}
+
+.wm_main .oceans span {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.compass {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  width: 150px;
+}
+
+.npo {
+  position: absolute;
+  top: 34%;
+  left: 12%;
+}
+
+.spo {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+}
+.nao {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+.sao {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+}
+.io {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+}
+.p {
+  position: absolute;
+  top: 30%;
+  right: 17%;
+}
+
+.so {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+}
+.ao {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+}
+
+svg path {
+  fill: rgb(16, 118, 114);
+  stroke: rgb(255, 255, 255);
+  stroke-width: 0.5px;
+  transition: all 0.3s ease-in-out;
+}
+
+svg path:hover {
+  cursor: pointer;
+  fill: #fff;
+}
+
+/* ------------------------ Country Info ----------------------- */
+.country_info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.818);
+  border: 1px solid rgb(35, 170, 191);
+  width: 370px;
+  height: 230px;
+  display: flex;
+  opacity: 0;
+  align-items: left;
+  padding-left: 20px;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+  transition: 0.2s ease;
+  z-index: 999;
+}
+
+.country_info .country {
+  font-size: 15px;
+  text-transform: uppercase;
+
+  color: rgb(172, 172, 172);
+  letter-spacing: 1px;
+}
+
+.country_info .flag {
+  width: 70px;
+  padding: 20px 0;
+}
+
+.country_info p {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 2px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+}
+
+.country_info p span {
+  font-weight: 500;
+  color: rgb(175, 175, 175);
+}
